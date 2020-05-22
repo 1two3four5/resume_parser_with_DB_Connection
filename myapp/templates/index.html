@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RESUME FILE</title>
+
+</head>
+<body style="background-color:blue;">
+{% block content %}
+<br><br><br><br>
+<form method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="file" name="document">
+    <input type="submit" value="upload"/>
+</form>
+{% endblock %}
+
+</body>
+</html>

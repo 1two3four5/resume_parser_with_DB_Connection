@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        input[type="text"]
+{
+  width:100%;
+  height:1%;
+  padding:20px;
+}
+
+    </style>
+</head>
+<body style="background-color: tomato;">
+<h1 style="text-align:center;">VERIFY YOUR DETAILS</h1>
+{% block content %}
+<form action="/action_page.php">
+        <table>
+        <tr>
+            <th>FIRST NAME:</th>
+            <td><input type="text" placeholder="{{ fname }}"></td>
+        </tr>
+        <tr>
+            <th>LAST NAME:</th>
+            <td><input type="text" placeholder="{{ lname }}"></td>
+        </tr>
+        <tr>
+            <th>EMAIL ADDRESS:</th>
+            <td><input type="text"  placeholder="{{ mail }}"></td>
+        </tr>
+        <tr>
+            <th>CONTACT NUMBER:</th>
+            <td><input type="text"  placeholder="{{ number }}"></td>
+        </tr>
+        <tr>
+            <th>STREET ADDRESS:</th>
+            <td><input type="text" placeholder="{{ address }}"></td>
+        </tr>
+        <tr>
+            <th>CITY:</th>
+            <td><input type="text" placeholder="{{ city }}"></td>
+        </tr>
+        <tr>
+            <th>STATE:</th>
+            <td><input type="text"  placeholder="{{ state }}"></td>
+        </tr>
+        <tr>
+            <th>COUNTRY:</th>
+            <td><input type="text" placeholder="{{ country }}"></td>
+        </tr>
+
+            <th>EDUCATION:</th>
+            <td><input type="text"  placeholder="{{ edu }}"></td>
+        </tr>
+        <tr>
+            <th>SKILLSET:</th>
+            <td><input type="text" placeholder="{{ skill }}"></td>
+        </tr>
+
+        </table>
+</form>
+{% endblock %}
+</body>
+</html>
